@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 namespace WordCounter.Models
 {
   public class RepeatCounter
   {
-    private static IEnumerable<String> charList = File.ReadLines("WordCounter/Models/LettersAndNumbers.txt");
     public string Word;
     public string Sentence;
   
@@ -18,12 +16,9 @@ namespace WordCounter.Models
     }
     public string GetWord()
     {
-      foreach (var wrods in charList)
+      if (Word.Contains('1') || Word.Contains('2') || Word.Contains('3') || Word.Contains('4') || Word.Contains('5') || Word.Contains('6') || Word.Contains('7') || Word.Contains('8') || Word.Contains('9') || Word.Contains('0'))
       {
-        if (Word.Contains(charList))
-        {
-          return "error";
-        }
+        return "no";
       }
       return Word;
     }
