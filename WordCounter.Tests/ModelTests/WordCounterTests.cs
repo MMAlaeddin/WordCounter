@@ -13,5 +13,12 @@ namespace WordCounter.Tests
       string result = newCounter.GetWord();
       Assert.AreEqual(result, "test");
     }
+    [TestMethod]
+    public void RepeatCounter_DenyIntegers_Error()
+    {
+      RepeatCounter newCounter = new RepeatCounter("t3st", "this is a sentence");
+      string result = newCounter.GetWord();
+      Assert.AreEqual(result, "error");
+    }
   }
 }
