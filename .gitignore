@@ -1,2 +1,4 @@
 WordCounter/obj
 WordCounter.Tests/obj
+WordCounter.Tests/bin
+WordCounter/bin
