@@ -35,16 +35,16 @@ namespace WordCounter.Models
     }
     public string CountWord()
     {
-      string[] wordAmount = new String[3]{};
+      int wordAmount = 0;
       string[] arrayCounter = Sentence.Split(" ");
       foreach (string words in arrayCounter)
       {
         if (words == Word)
         {
-          return wordAmount + Word;
+          wordAmount++;
         }
       }
-      return "error";
+      return wordAmount;
     }
   }
 }
