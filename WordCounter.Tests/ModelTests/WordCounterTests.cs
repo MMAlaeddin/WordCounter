@@ -21,7 +21,7 @@ namespace WordCounter.Tests
       Assert.AreEqual(result, "error");
     }
     [TestMethod]
-    public void RepeatCounter_WordMatch_True()
+    public void RepeatCounter_WordMatch_FindWord()
     {
       RepeatCounter newCounter = new RepeatCounter("test", "this is a sentence test");
       string result = newCounter.WordMatch();
