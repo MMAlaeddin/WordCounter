@@ -44,7 +44,7 @@ namespace WordCounter.Models
           wordAmount ++;
         }
       }
-      return wordAmount;
+      return (int)wordAmount;
     }
   }
 }
