@@ -22,17 +22,16 @@ namespace WordCounter.Models
       }
       return Word;
     }
-    public bool WordMatch()
+    public string WordMatch()
     {
-      char[] sentArray = Sentence.ToCharArray();
+      for (int i = 0; i < Sentence.Length; i ++)
       {
-      for (string i = 0; i < sentArray.Length; i ++)
-      {
-        if (Word.Contains(sentArray[i]))
+        if (Sentence.Contains(Word))
         {
-          return false;
+          return "match";
         }
       }
+      return Word;
     }
   }
 }
