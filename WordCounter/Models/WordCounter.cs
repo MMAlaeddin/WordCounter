@@ -32,7 +32,7 @@ namespace WordCounter.Models
       }
       return "error";
     }
-    public string CountWord()
+    public int CountWord()
     {
       int wordAmount = 0;
       string[] arrayCounter = Sentence.Split(" ");

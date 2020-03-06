@@ -32,9 +32,11 @@ namespace WordCounter.Tests
     [TestMethod]
     public void RepeatCounter_WordCount_CountWord()
     {
-      RepeatCounter newCounter = new RepeatCounter("test", "this is a sentence test");
+      string aWord = "test";
+      string aSent = "this is a test sentence";
+      RepeatCounter newCounter = new RepeatCounter(aWord, aSent);
       int result = newCounter.CountWord();
-      Assert.AreEqual(3, result);
+      Assert.AreEqual(1, result);
     }
   }
 }
