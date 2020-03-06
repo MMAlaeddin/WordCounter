@@ -28,10 +28,10 @@ namespace WordCounter.Models
       {
         if (Sentence.Contains(Word))
         {
-          return "match";
+          return Word;
         }
       }
-      return Word;
+      return "error";
     }
   }
 }
