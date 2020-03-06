@@ -6,8 +6,8 @@ namespace WordCounter.Models
 {
   public class RepeatCounter
   {
-    public string Word;
-    public string Sentence;
+    public string Word { get; set; }
+    public string Sentence { get; set; }
   
     public RepeatCounter(string inputWord, string inputSentence)
     {
@@ -36,10 +36,10 @@ namespace WordCounter.Models
     public string CountWord()
     {
       string[] wordAmount = new String[]{};
-      string[] arrayCounter = Sentence.Split(" ");
+      string[] arrayCounter = Sentence.Split(" , ");
       foreach (string words in arrayCounter)
       {
-        if (Sentence == words)
+        if (arrayCounter.Contains(words))
         {
           wordAmount.Add(Word);
         }
