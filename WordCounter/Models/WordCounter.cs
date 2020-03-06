@@ -39,12 +39,12 @@ namespace WordCounter.Models
       string[] arrayCounter = Sentence.Split(" ");
       foreach (string words in arrayCounter)
       {
-        if (words.Contains(Word))
+        if (words == Word)
         {
-          wordAmount ++;
+          wordAmount++;
         }
       }
-      return (int)wordAmount;
+      return wordAmount;
     }
   }
 }
