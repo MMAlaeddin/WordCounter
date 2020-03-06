@@ -18,7 +18,7 @@ namespace WordCounter.Models
     {
       if (Word.Contains('1') || Word.Contains('2') || Word.Contains('3') || Word.Contains('4') || Word.Contains('5') || Word.Contains('6') || Word.Contains('7') || Word.Contains('8') || Word.Contains('9') || Word.Contains('0'))
       {
-        return "no";
+        return "error";
       }
       return Word;
     }
