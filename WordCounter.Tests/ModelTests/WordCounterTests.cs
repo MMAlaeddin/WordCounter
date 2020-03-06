@@ -35,6 +35,7 @@ namespace WordCounter.Tests
     {
       RepeatCounter newCounter = new RepeatCounter("test", "this is a sentence test test test");
       string result = newCounter.CountWord();
-      Assert.AreEqual(3, result);
+      Assert.AreEqual(["test", "test", "test"], result);
+    }
   }
 }
