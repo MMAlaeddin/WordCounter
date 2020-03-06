@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace WordCounter.Models
 {
   public class RepeatCounter
@@ -41,7 +40,7 @@ namespace WordCounter.Models
       {
         if (words == Word)
         {
-          wordAmount++;
+          wordAmount ++;
         }
       }
       return wordAmount;

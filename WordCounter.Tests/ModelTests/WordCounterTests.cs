@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
 
@@ -33,7 +32,7 @@ namespace WordCounter.Tests
     [TestMethod]
     public void RepeatCounter_WordCount_CountWord()
     {
-      RepeatCounter newCounter = new RepeatCounter("test", "this is a sentence test test test");
+      RepeatCounter newCounter = new RepeatCounter("test", "this is a sentence test");
       int result = newCounter.CountWord();
       Assert.AreEqual(3, result);
     }
