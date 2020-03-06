@@ -33,9 +33,18 @@ namespace WordCounter.Models
       }
       return "error";
     }
-    // public string CountWord()
-    // {
-    //   RepeatCounter.WordMatch()
-    // }
+    public string CountWord()
+    {
+      int wordAmount = 0;
+      string[] arrayCounter = Sentence.Split(" ");
+      foreach (string words in arrayCounter)
+      {
+        if (Sentence.Contains(words))
+        {
+          wordAmount ++;
+        }
+      }
+      return wordAmount;
+    }
   }
 }
