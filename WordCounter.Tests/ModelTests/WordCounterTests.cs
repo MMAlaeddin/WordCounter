@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
 
@@ -25,7 +28,7 @@ namespace WordCounter.Tests
     {
       RepeatCounter newCounter = new RepeatCounter("test", "this is a sentence test");
       string result = newCounter.WordMatch();
-      Assert.AreEqual(result, "test");
+      Assert.AreEqual(result, ("test"));
     }
   }
 }

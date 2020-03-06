@@ -33,7 +33,9 @@ namespace WordCounter.Models
       }
       return "error";
     }
-    public string CountWord()
-    
+    // public string CountWord()
+    // {
+    //   RepeatCounter.WordMatch()
+    // }
   }
 }
