@@ -14,7 +14,7 @@ namespace WordCounter
       string newSentence = Console.ReadLine();
       RepeatCounter newCounter = new RepeatCounter(newWord, newSentence);
       int finalOutput = newCounter.CountWord();
-      Console.WriteLine(newWord + " repeats " + finalOutput + " time(s) in your sentence.");
+      Console.WriteLine("your word " + "~ " + newWord + " ~" + " repeats " + finalOutput + " time(s) in your sentence.");
     }
   }
 }
