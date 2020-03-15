@@ -47,5 +47,14 @@ namespace WordCounter.Tests
       int result = newCounter.CountWord();
       Assert.AreEqual(2, result);
     }
+    [TestMethod]
+    public void RepeatCounter_CountWordMultipleTimes_CountWord()
+    {
+    string aWord = "test";
+    string aSent = "test this test so I can pass my test";
+    RepeatCounter newCounter = new RepeatCounter(aWord, aSent);
+    int result = newCounter.CountWord();
+    Assert.AreEqual(3, result);
+    }
   }
 }
