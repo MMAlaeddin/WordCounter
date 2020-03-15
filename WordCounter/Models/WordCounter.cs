@@ -27,7 +27,7 @@ namespace WordCounter.Models
       {
        return "error";
       }
-      return "hello";
+      return Sentence;
     }
     public string WordMatch()
     {
