@@ -21,6 +21,14 @@ namespace WordCounter.Models
       }
       return Word;
     }
+    public string GetSentence()
+    {
+      if (Sentence.Contains('1') || Sentence.Contains('2') || Sentence.Contains('3') || Sentence.Contains('4') || Sentence.Contains('5') || Sentence.Contains('6') || Sentence.Contains('7') || Sentence.Contains('8') || Sentence.Contains('9') || Sentence.Contains('0'))
+      {
+       return "error";
+      }
+      return "hello";
+    }
     public string WordMatch()
     {
       for (int i = 0; i < Sentence.Length; i ++)

@@ -56,5 +56,12 @@ namespace WordCounter.Tests
     int result = newCounter.CountWord();
     Assert.AreEqual(3, result);
     }
+    [TestMethod]
+    public void RepeatCounter_ReturnInputSentence_Sentence()
+    {
+      RepeatCounter newCounter = new RepeatCounter("test", "this is a sentence");
+      string result = newCounter.GetSentence();
+      Assert.AreEqual(result, "this is a sentence");
+    }
   }
 }
