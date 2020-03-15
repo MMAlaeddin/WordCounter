@@ -38,5 +38,14 @@ namespace WordCounter.Tests
       int result = newCounter.CountWord();
       Assert.AreEqual(1, result);
     }
+    [TestMethod]
+    public void RepeatCounter_OnlyCheckExactWord_CountWord()
+    {
+      string aWord = "test";
+      string aSent = "testing this test sentence test";
+      RepeatCounter newCounter = new RepeatCounter(aWord, aSent);
+      int result = newCounter.CountWord();
+      Assert.AreEqual(2, result);
+    }
   }
 }
